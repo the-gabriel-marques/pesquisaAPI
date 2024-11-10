@@ -1,0 +1,83 @@
+body {
+    background-image: url(img/wp5979080-rick-and-morty-minimalist-wallpapers.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: rgb(123, 214, 214);
+    cursor: pointer;
+    border: none;
+}
+body {
+    background-image: url(img/wp5979080-rick-and-morty-minimalist-wallpapers.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: rgb(123, 214, 214);
+    cursor: pointer;
+    border: none;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima */
+}
+
+.card {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 16px;
+    width: 100%; /* Para que o card ocupe a largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card p {
+    margin: 8px 0;
+    font-weight: bold;
+}
