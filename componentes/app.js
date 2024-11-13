@@ -8,6 +8,9 @@ async function carregarDados({ nome, status }) {
         const appContainer = document.getElementById('app');
         appContainer.innerHTML = ''; // Limpa os resultados anteriores
         mostrarCard(appContainer, dadosExternos);
+
+        // Aplica o desfoque à camada de fundo
+        document.querySelector('.background-layer').style.filter = 'blur(8px)';
     } catch (error) {
         console.error('Erro ao buscar os dados:', error);
     }
@@ -19,9 +22,13 @@ function init() {
     // Cria e adiciona o formulário à página
     const form = criarFormulario(carregarDados);
     document.body.insertBefore(form, appContainer);
+
+    // Remove o desfoque da camada de fundo ao carregar a página
+    document.querySelector('.background-layer').style.filter = 'none';
 }
 
 init();
+
 
 
 /* Aqui são importadas as funções buscarDados e mostrarCard 
